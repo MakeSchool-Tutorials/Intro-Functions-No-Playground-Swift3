@@ -274,5 +274,7 @@ It's time for you to define your own function with a return value!
 > [challenge]
 > Write a `calculateRotationForPolygon` function that takes one parameter called `sides` of type `Int` and returns a `Double`. Update your `drawPolygon` function to use `calculateRotationForPolygon`.
 
+<!--  -->
+
 > [info]
 > Remember that you will need to _cast_ `sides` from an `Int` to a `Double`. Swift is very specific about types! You can _cast_ or convert it with `Double(sides)`.

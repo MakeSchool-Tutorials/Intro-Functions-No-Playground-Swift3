@@ -6,7 +6,7 @@ slug: create-something-cool
 > [challenge]
 > Use everything you learned to draw something awesome! See below for a few more functions you can use to bring your art to life!
 >
-> You should do this in `runDrawing()` and add any create functions that will help you!
+> You should do this in `runDrawing()` and any create functions that will help you!
 
 # Drop and lift the pen
 
