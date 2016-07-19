@@ -76,5 +76,5 @@ setThickness(thickness: Double)
 
 ## Make the pen move faster
 ```
-setDelay(delay: Double)
+changeDelay(delay: Double)
 ```
