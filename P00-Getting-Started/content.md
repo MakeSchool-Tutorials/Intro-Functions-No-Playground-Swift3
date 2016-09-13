@@ -4,7 +4,14 @@ slug: functions
 ---
 
 > [info]
+> Xcode 8 and Swift 3 was released on on September 13th, 2016. Please make sure to update as soon as possible. [The first lesson](https://www.makeschool.com/academy/tutorial/getting-started-with-xcode-playgrounds-0afee09b-0bdb-47bd-8551-e179266b6b65/get-started-with-xcode-74d7476e-22f1-403c-99ab-b767f1a7b71e) has been updated with instructions for checking your version and updating if necessary.
+
+<!--  -->
+
+> [info]
 > Only do this tutorial if the previous Functions Playground did not work on your computer!
+
+**This is an archive of the Xcode 7 instructions. Go back to the dashboard to find the Xcode 8 version.**
 
 Now that we've learned _variables_, let's move on to _functions_. In this _Swift Playground_, you will learn how to group code into reusable blocks called _functions_. This will allow you to organize your code to be highly reusable. You'll learn how to call to call functions, pass data into them and return data from them. Throughout this playground you will create some pretty cool art! Get ready to be creative :)
 
