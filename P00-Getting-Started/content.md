@@ -11,13 +11,13 @@ slug: functions
 > [info]
 > Only do this tutorial if the previous Functions Playground did not work on your computer!
 
-**This is an archive of the Xcode 7 instructions. Go back to the dashboard to find the Xcode 8 version.**
+**These are the instructions for Xcode 8. If you have Xcode 7 and cannot update, please go back to the dashboard and select the Xcode 7 version.**
 
 Now that we've learned _variables_, let's move on to _functions_. In this _Swift Playground_, you will learn how to group code into reusable blocks called _functions_. This will allow you to organize your code to be highly reusable. You'll learn how to call to call functions, pass data into them and return data from them. Throughout this playground you will create some pretty cool art! Get ready to be creative :)
 
 > [action]
 >
-1. Download the Functions Xcode project from [here](https://github.com/MakeSchool-Tutorials/Functions-OSX-Starter/archive/master.zip).
+1. Download the Functions Xcode project from [here](https://github.com/MakeSchool-Tutorials/Functions-OSX-Starter/archive/swift3.zip).
 1. Double-click the downloaded zip file to "extract it".
 1. Inside the newly extracted folder you should see a file named `Functions-OSX.xcodeproj`, drag this into your "Make School Projects" folder.
 1. Open your "Make School Projects" folder and double-click `Functions-OSX.xcodeproj` to get started!

@@ -7,7 +7,7 @@ slug: passing-receiving-data
 
 Have you been wondering why there are parentheses after function calls? It's not just so they look different from variables. It's because you can sometimes pass data to functions!
 
-So far, we have been using the hardcoded `moveFifty()` and `rotateNinety()` functions. While this works, wouldn't it be nicer to be able to say `move(75)`? Try it out inside your `runDrawing` function!
+So far, we have been using the hardcoded `moveFifty()` and `rotateNinety()` functions. While this works, wouldn't it be nicer to be able to say `move(steps: 75)`? Try it out inside your `runDrawing` function!
 
 > [challenge]
 >
@@ -17,7 +17,7 @@ So far, we have been using the hardcoded `moveFifty()` and `rotateNinety()` func
 
 ## Recap
 
-We can call both `move(50)` and `rotate(90)` to get the same outcome as `moveFifty()` and `rotateNinety()`. You can put _any_ whole number in the parentheses and move custom amounts! The value we put in the parentheses is a _function parameter_.
+We can call both `move(steps: 50)` and `rotate(degrees: 90)` to get the same outcome as `moveFifty()` and `rotateNinety()`. You can put _any_ whole number in the parentheses and move custom amounts! The value we put in the parentheses is a _function parameter_. `steps` and `degrees` are both _function parameter names_.
 
 # drawTriangle, drawPentagon, drawHexagon
 
@@ -62,7 +62,7 @@ functionName()
 **Calling a function with 1 parameter:**
 
 ```
-functionName(parameterValue)
+functionName(parameterName: parameterValue)
 ```
 
 **Defining a function without parameters:**
@@ -111,7 +111,7 @@ func drawSquare(sideLength: Int) {
 }
 ```
 >
-> Remember, `sideLength` becomes a constant inside of the function's body. You can directly use constants and variables as parameters when you call other functions! Test out your new method with a function call of `drawSquare(150)`.
+> Remember, `sideLength` becomes a constant inside of the function's body. You can directly use constants and variables as parameters when you call other functions! Test out your new method with a function call of `drawSquare(sideLength: 150)`.
 >
 > Make sure to call the drawSquare function after you have defined it! It needs to be called with a function parameter like we did on the previous page.
 
@@ -153,7 +153,7 @@ would become:
 
 ```
 for _ in 1...4 {
-    move(10)
+    move(steps: 10)
 }
 ```
 
@@ -199,16 +199,16 @@ func drawPolygon(numberOfSides: Int, sideLength: Int) {
 
 ## Calling functions with more than one parameter
 
-How do you think this function would be called? A reasonable guess is that `drawPolygon(3, 100)` would create a triangle with sides of length `100` but no, that won't work!
+How do you think this function would be called? A reasonable guess is that `drawPolygon(numberOfSides: 3, 100)` would create a triangle with sides of length `100` but no, that won't work!
 
-The correct (and only way) you can call the function above is with the format `drawPolygon(3, sideLength: 100)`.
+The correct (and only way) you can call the function above is with the format `drawPolygon(numberOfSides: 3, sideLength: 100)`.
 
 ## What???
 
-Some of you are now wondering why `drawPolygon(3, sideLength: 100)` works and `drawPolygon(numberOfSides: 3, sideLength: 100)` does not. By default, Swift requires a parameter label for each parameter after the first. If you do not explicitly specify a parameter label, it assumes you want to use the parameter name as the label too. This means the generalized format of calling a function with multiple parameters is:
+Some of you are now wondering why `drawPolygon(numberOfSides: 3, sideLength: 100)` works and `drawPolygon(numberOfSides: 3, 100)` does not. By default, Swift requires a parameter label for each parameter. If you do not explicitly specify a parameter label, it assumes you want to use the parameter name as the label too. This means the generalized format of calling a function with multiple parameters is:
 
 ```
-functionName(parameterOneValue, parameterTwoName: parameterTwoValue)
+functionName(parameterOneName: parameterOneValue, parameterTwoName: parameterTwoValue)
 ```
 
 > [challenge]
@@ -232,9 +232,9 @@ func radiansToDegrees(radians: Double) -> Double {
   return radians * 180 / M_PI
 }
 
-let halfPiRadiansInDegrees = radiansToDegrees(M_PI / 2)
-let piRadiansInDegrees = radiansToDegrees(M_PI)
-let twoPiRadiansInDegrees = radiansToDegrees(2 * M_PI)
+let halfPiRadiansInDegrees = radiansToDegrees(radians: M_PI / 2)
+let piRadiansInDegrees = radiansToDegrees(radians: M_PI)
+let twoPiRadiansInDegrees = radiansToDegrees(radians: 2 * M_PI)
 ```
 
 ## Defining functions with return values

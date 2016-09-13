@@ -32,14 +32,7 @@ move(steps: Int)
 
 ## Move directly to coordinates
 ```
-moveTo(x x: Int, y: Int)
-```
-
-> [info]
-> This is called with labels for both parameters! For example...
->
-```
-moveTo(x x: 10, y: 40)
+moveTo(x: Int, y: Int)
 ```
 
 ## Rotate heading by an angle
@@ -51,7 +44,7 @@ rotate(degrees: Int)
 
 ## Set color of pen
 ```
-setColor(red red: Double, green: Double, blue: Double)
+setColor(red: Double, green: Double, blue: Double)
 ```
 
 > [info]
@@ -71,10 +64,10 @@ would change the pen to be red.
 
 ## Set thickness of pen
 ```
-setThickness(thickness: Double)
+set(thickness: Double)
 ```
 
 ## Make the pen move faster
 ```
-changeDelay(delay: Double)
+set(delay: Double)
 ```
